@@ -8,6 +8,9 @@ module.exports = {
   siteName: 'Shop Local',
   plugins: [
     {
+      use: 'gridsome-plugin-tailwindcss',
+    },
+    {
       use: 'gridsome-source-static-meta',
       options: {
         path: 'data/*.json',

@@ -7,19 +7,6 @@
 const businessData = require('./data/businesses.js');
 module.exports = function(api) {
   api.loadSource(async ({ addCollection }) => {
-    /*
-     name: 'Bare Market',
-    id: 1,
-    url: 'https://baremarket.ca/',
-    goods: 'Organic and low pagaging bulk, produce and household items',
-    image: 'bare-market.png',
-    alt:
-      "wood brushes in jars with the text 'Bare Market, package-free goods + grocery'",
-    pickup: true,
-    delivery: false,
-    neighbourhood: 'Coxwell and Danforth',
-    details:
-    */
     const collection = addCollection('Businesses');
     businessData.forEach(
       ({
